@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Karaoke Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <div class="app">
+    <h1>🎤 Karaoke Demo</h1>
+
+    <label>
+      Audio File
+      <input type="file" id="audioInput" accept="audio/*" />
+    </label>
+
+    <label>
+      Lyrics File (.txt)
+      <input type="file" id="lyricsInput" accept=".txt" />
+    </label>
+
+    <button id="generateBtn">Generate Karaoke</button>
+
+    <p id="status"></p>
+
+    <video id="preview" controls style="display:none; width:100%;"></video>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
