@@ -1,4 +1,4 @@
-const SERVER_URL = "YOUR_RENDER_URL_HERE";
+const SERVER_URL = https://karaoke-backend-30gu.onrender.com;
 
 const audioInput = document.getElementById("audioInput");
 const lyricsInput = document.getElementById("lyricsInput");
