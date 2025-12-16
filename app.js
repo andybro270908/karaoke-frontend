@@ -1,3 +1,4 @@
+alert("✅ app.js loaded");
 const SERVER_URL = "https://karaoke-backend-30gu.onrender.com";
 
 const audioInput = document.getElementById("audioInput");
