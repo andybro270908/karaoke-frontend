@@ -31,13 +31,10 @@ generateBtn.onclick = async () => {
     }
 
     statusText.innerText = "Receiving video...";
-    const videoBlob = await response.blob();
-    const videoURL = URL.createObjectURL(videoBlob);
+    const text = await response.text();
 
-    previewVideo.src = videoURL;
-    previewVideo.style.display = "block";
-
-    statusText.innerText = "✅ Karaoke video ready!";
+statusText.innerText = "Server response:";
+alert(text);
   } catch (err) {
     console.error(err);
     alert("❌ Error: " + err.message);
